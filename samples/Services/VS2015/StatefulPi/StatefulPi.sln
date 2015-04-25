@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22808.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "StatefulPiApplication", "StatefulPiApplication\StatefulPiApplication.sfproj", "{A66643EB-715F-4BAE-9FB2-4D76F13874C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatefulPiService", "StatefulPiService\StatefulPiService.csproj", "{F33B252F-2D1C-4862-AF91-4506DCA424E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Debug|x64.ActiveCfg = Debug|x64
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Debug|x64.Build.0 = Debug|x64
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Debug|x64.Deploy.0 = Debug|x64
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Release|x64.ActiveCfg = Release|x64
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Release|x64.Build.0 = Release|x64
+		{A66643EB-715F-4BAE-9FB2-4D76F13874C4}.Release|x64.Deploy.0 = Release|x64
+		{F33B252F-2D1C-4862-AF91-4506DCA424E8}.Debug|x64.ActiveCfg = Debug|x64
+		{F33B252F-2D1C-4862-AF91-4506DCA424E8}.Debug|x64.Build.0 = Debug|x64
+		{F33B252F-2D1C-4862-AF91-4506DCA424E8}.Release|x64.ActiveCfg = Release|x64
+		{F33B252F-2D1C-4862-AF91-4506DCA424E8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

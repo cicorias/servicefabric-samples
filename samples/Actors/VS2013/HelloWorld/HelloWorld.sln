@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldInterfaces", "HelloWorldInterfaces\HelloWorldInterfaces.csproj", "{FA072DEA-A59C-4B27-A401-4E904188EE89}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldClient", "HelloWorldClient\HelloWorldClient.csproj", "{FD3EF8ED-1BCA-4D13-8428-ECC3900301BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldActorService", "HelloWorldActorService\HelloWorldActorService.csproj", "{4640B015-6D3A-42BB-BC23-61FEABAEC41F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA072DEA-A59C-4B27-A401-4E904188EE89}.Debug|x64.ActiveCfg = Debug|x64
+		{FA072DEA-A59C-4B27-A401-4E904188EE89}.Debug|x64.Build.0 = Debug|x64
+		{FA072DEA-A59C-4B27-A401-4E904188EE89}.Release|x64.ActiveCfg = Release|x64
+		{FA072DEA-A59C-4B27-A401-4E904188EE89}.Release|x64.Build.0 = Release|x64
+		{FD3EF8ED-1BCA-4D13-8428-ECC3900301BF}.Debug|x64.ActiveCfg = Debug|x64
+		{FD3EF8ED-1BCA-4D13-8428-ECC3900301BF}.Debug|x64.Build.0 = Debug|x64
+		{FD3EF8ED-1BCA-4D13-8428-ECC3900301BF}.Release|x64.ActiveCfg = Release|x64
+		{FD3EF8ED-1BCA-4D13-8428-ECC3900301BF}.Release|x64.Build.0 = Release|x64
+		{4640B015-6D3A-42BB-BC23-61FEABAEC41F}.Debug|x64.ActiveCfg = Debug|x64
+		{4640B015-6D3A-42BB-BC23-61FEABAEC41F}.Debug|x64.Build.0 = Debug|x64
+		{4640B015-6D3A-42BB-BC23-61FEABAEC41F}.Release|x64.ActiveCfg = Release|x64
+		{4640B015-6D3A-42BB-BC23-61FEABAEC41F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

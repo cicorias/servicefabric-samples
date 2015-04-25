@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22808.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "HelloWorldApplication", "HelloWorldApplication\HelloWorldApplication.sfproj", "{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{BFC061E1-09CF-46CD-9B20-5DEDC9BBDB7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Interfaces", "HelloWorld.Interfaces\HelloWorld.Interfaces.csproj", "{EC7BD6E4-FD6C-4436-8D6D-BBF272DD24A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldClient", "HelloWorldClient\HelloWorldClient.csproj", "{7C2E8539-4B05-49BE-AAD6-7C3DD71A7203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Debug|x64.ActiveCfg = Debug|x64
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Debug|x64.Build.0 = Debug|x64
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Debug|x64.Deploy.0 = Debug|x64
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Release|x64.ActiveCfg = Release|x64
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Release|x64.Build.0 = Release|x64
+		{5706DDC7-4FD6-4F3E-B528-6BFDB4B5F53C}.Release|x64.Deploy.0 = Release|x64
+		{BFC061E1-09CF-46CD-9B20-5DEDC9BBDB7E}.Debug|x64.ActiveCfg = Debug|x64
+		{BFC061E1-09CF-46CD-9B20-5DEDC9BBDB7E}.Debug|x64.Build.0 = Debug|x64
+		{BFC061E1-09CF-46CD-9B20-5DEDC9BBDB7E}.Release|x64.ActiveCfg = Release|x64
+		{BFC061E1-09CF-46CD-9B20-5DEDC9BBDB7E}.Release|x64.Build.0 = Release|x64
+		{EC7BD6E4-FD6C-4436-8D6D-BBF272DD24A6}.Debug|x64.ActiveCfg = Debug|x64
+		{EC7BD6E4-FD6C-4436-8D6D-BBF272DD24A6}.Debug|x64.Build.0 = Debug|x64
+		{EC7BD6E4-FD6C-4436-8D6D-BBF272DD24A6}.Release|x64.ActiveCfg = Release|x64
+		{EC7BD6E4-FD6C-4436-8D6D-BBF272DD24A6}.Release|x64.Build.0 = Release|x64
+		{7C2E8539-4B05-49BE-AAD6-7C3DD71A7203}.Debug|x64.ActiveCfg = Debug|x64
+		{7C2E8539-4B05-49BE-AAD6-7C3DD71A7203}.Debug|x64.Build.0 = Debug|x64
+		{7C2E8539-4B05-49BE-AAD6-7C3DD71A7203}.Release|x64.ActiveCfg = Release|x64
+		{7C2E8539-4B05-49BE-AAD6-7C3DD71A7203}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

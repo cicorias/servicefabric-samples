@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoicemailBoxInterfaces", "VoicemailBoxInterfaces\VoicemailBoxInterfaces.csproj", "{38A47436-30C6-4A54-AC1B-3151E9CC70EC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoicemailBoxClient", "VoicemailBoxClient\VoicemailBoxClient.csproj", "{219D7CD1-97EB-4AB8-8D20-BB675AFFA1B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoicemailBoxActorService", "V1\VoicemailBoxActorService\VoicemailBoxActorService.csproj", "{3D483A6A-6BE1-474C-B585-25D6175C768A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoicemailBoxActorServiceV2", "V2\VoicemailBoxActorServiceV2\VoicemailBoxActorServiceV2.csproj", "{014045F2-8A2C-4B4B-B09F-E0D519198DC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38A47436-30C6-4A54-AC1B-3151E9CC70EC}.Debug|x64.ActiveCfg = Debug|x64
+		{38A47436-30C6-4A54-AC1B-3151E9CC70EC}.Debug|x64.Build.0 = Debug|x64
+		{38A47436-30C6-4A54-AC1B-3151E9CC70EC}.Release|x64.ActiveCfg = Release|x64
+		{38A47436-30C6-4A54-AC1B-3151E9CC70EC}.Release|x64.Build.0 = Release|x64
+		{219D7CD1-97EB-4AB8-8D20-BB675AFFA1B8}.Debug|x64.ActiveCfg = Debug|x64
+		{219D7CD1-97EB-4AB8-8D20-BB675AFFA1B8}.Debug|x64.Build.0 = Debug|x64
+		{219D7CD1-97EB-4AB8-8D20-BB675AFFA1B8}.Release|x64.ActiveCfg = Release|x64
+		{219D7CD1-97EB-4AB8-8D20-BB675AFFA1B8}.Release|x64.Build.0 = Release|x64
+		{3D483A6A-6BE1-474C-B585-25D6175C768A}.Debug|x64.ActiveCfg = Debug|x64
+		{3D483A6A-6BE1-474C-B585-25D6175C768A}.Debug|x64.Build.0 = Debug|x64
+		{3D483A6A-6BE1-474C-B585-25D6175C768A}.Release|x64.ActiveCfg = Release|x64
+		{3D483A6A-6BE1-474C-B585-25D6175C768A}.Release|x64.Build.0 = Release|x64
+		{014045F2-8A2C-4B4B-B09F-E0D519198DC6}.Debug|x64.ActiveCfg = Debug|x64
+		{014045F2-8A2C-4B4B-B09F-E0D519198DC6}.Debug|x64.Build.0 = Debug|x64
+		{014045F2-8A2C-4B4B-B09F-E0D519198DC6}.Release|x64.ActiveCfg = Release|x64
+		{014045F2-8A2C-4B4B-B09F-E0D519198DC6}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

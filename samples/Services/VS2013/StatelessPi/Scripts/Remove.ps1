@@ -1,0 +1,9 @@
+﻿Connect-ServiceFabricCluster
+
+Remove-ServiceFabricService -ServiceName fabric:/StatelessPiServiceApp/StatelessPiService -Force
+
+Remove-ServiceFabricApplication -ApplicationName fabric:/StatelessPiServiceApp -Force
+
+Unregister-ServiceFabricApplicationType -ApplicationTypeName StatelessPiServiceApp -ApplicationTypeVersion 1.0 -Force
+
+Remove-ServiceFabricApplicationPackage -ApplicationPackagePathInImageStore StatelessPiServiceApp -ImageStoreConnectionString  fabric:ImageStore

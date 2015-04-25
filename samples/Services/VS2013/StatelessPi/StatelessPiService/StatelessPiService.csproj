@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{0A67A59B-9101-40DC-9858-A894B1D98F39}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StatelessPiService</RootNamespace>
+    <AssemblyName>StatelessPiServiceHost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationPackagePath>$(TargetDir)StatelessPiServiceApp</ApplicationPackagePath>
+    <ServicePackagePath>$(ApplicationPackagePath)\StatelessPiService</ServicePackagePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Fabric" />
+    <Reference Include="Microsoft.ServiceFabric.Services">
+      <HintPath>$(SolutionDir)packages\Microsoft.ServiceFabric.Services.1.0.314-preview1\lib\net45\Microsoft.ServiceFabric.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceFabric.Data">
+      <HintPath>$(SolutionDir)packages\Microsoft.ServiceFabric.Data.1.0.314-preview1\lib\net45\Microsoft.ServiceFabric.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceFabric.Collections">
+      <HintPath>$(SolutionDir)packages\Microsoft.ServiceFabric.Data.1.0.314-preview1\lib\net45\Microsoft.ServiceFabric.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Fabric.Common.Internal">
+      <HintPath>$(SolutionDir)packages\Microsoft.ServiceFabric.4.0.95-preview1\lib\net45\System.Fabric.Common.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Fabric.Common.Internal.Strings">
+      <HintPath>$(SolutionDir)packages\Microsoft.ServiceFabric.4.0.95-preview1\lib\net45\System.Fabric.Common.Internal.Strings.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Estimate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="ServiceHost.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manifests\ApplicationManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Manifests\ServiceManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+      xcopy /R /Y "$(ProjectDir)Manifests\ApplicationManifest.xml" "$(ApplicationPackagePath)\"
+      xcopy /R /Y "$(ProjectDir)Manifests\ServiceManifest.xml" "$(ServicePackagePath)\"
+      xcopy /R /Y "*" "$(ServicePackagePath)\Code\"
+      del /F /Q *
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

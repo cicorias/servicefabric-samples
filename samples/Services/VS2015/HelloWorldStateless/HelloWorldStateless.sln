@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22808.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "HelloWorldStatelessApplication", "HelloWorldStatelessApplication\HelloWorldStatelessApplication.sfproj", "{481624A3-ACA8-4609-BF99-32E4365E2511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldStateless", "HelloWorldStateless\HelloWorldStateless.csproj", "{4EE03A26-CD9E-4616-BE18-8D31CFA72BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Debug|x64.ActiveCfg = Debug|x64
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Debug|x64.Build.0 = Debug|x64
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Debug|x64.Deploy.0 = Debug|x64
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Release|x64.ActiveCfg = Release|x64
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Release|x64.Build.0 = Release|x64
+		{481624A3-ACA8-4609-BF99-32E4365E2511}.Release|x64.Deploy.0 = Release|x64
+		{4EE03A26-CD9E-4616-BE18-8D31CFA72BE6}.Debug|x64.ActiveCfg = Debug|x64
+		{4EE03A26-CD9E-4616-BE18-8D31CFA72BE6}.Debug|x64.Build.0 = Debug|x64
+		{4EE03A26-CD9E-4616-BE18-8D31CFA72BE6}.Release|x64.ActiveCfg = Release|x64
+		{4EE03A26-CD9E-4616-BE18-8D31CFA72BE6}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
